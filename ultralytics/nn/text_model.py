@@ -11,10 +11,10 @@ from ultralytics.utils import checks
 from ultralytics.utils.torch_utils import smart_inference_mode
 
 try:
-    import clip
+    import open_clip
 except ImportError:
-    checks.check_requirements("git+https://github.com/ultralytics/CLIP.git")
-    import clip
+    # checks.check_requirements("git+https://github.com/ultralytics/CLIP.git")
+    import open_clip
 
 
 class TextModel(nn.Module):
